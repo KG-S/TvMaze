@@ -26,8 +26,8 @@ main div {
 }
 
 main a {
-  font-family:'Times New Roman', Times, serif;
-  text-shadow: 2px 4px 5px #000150;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 4px 5px #00015063;
   text-align: center;
   text-decoration: none;
   color: inherit;
@@ -216,12 +216,12 @@ form h3 {
 
 .search-box:hover>.search-btn,
 .search-input:focus+.search-btn {
-  background: c;
+  background:#22ffc8;
   color: #101010;
 }
 
 .results{
-  font-family:"Montserrat",sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:1rem;
   letter-spacing:2px;
   text-align:center;
@@ -229,6 +229,30 @@ form h3 {
   margin-top: 50px;
 }
 
+/* Estilo da barra de rolagem para navegadores baseados em WebKit (Chrome, Safari) */
+.pop::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.pop::-webkit-scrollbar-track {
+  background: #353535; 
+  border-radius: 6px;
+}
+
+.pop::-webkit-scrollbar-thumb {
+  background: #0084ff; 
+  border-radius: 6px; 
+}
+
+.pop::-webkit-scrollbar-thumb:hover {
+  background: #005bb5; 
+}
+
+
+.pop {
+  scrollbar-width: thin;
+  scrollbar-color: #0084ff #353535; 
+}
 
 
 .pop a{
@@ -241,14 +265,14 @@ form h3 {
 }
 
 .pop {
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   overflow-x: hidden;
   position: absolute;
   background-color: #2b2c2c6b;
-  width: 60%;
+  width: 70%;
   height: 90%;
   z-index: 1;
   border-radius: 0.5rem;
@@ -256,7 +280,7 @@ form h3 {
   justify-content: center;
   align-items: center;
   padding: 14px;
-  font-family: monospace;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
  
   
 }
@@ -296,23 +320,4 @@ form h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.pop::-webkit-scrollbar-track{
-  border: 1px solid rgba(255, 0, 0, 0);
-  background-color: #ca000000;
-  
-}
-
-.pop::-webkit-scrollbar {
-  background-color: #35353500;
-  overflow-x: hidden
-  
-  
-
-}
-.pop::-webkit-scrollbar-thumb {
-  border-radius: 0.7rem;
-  background-color: #0084ff;
-
 }
